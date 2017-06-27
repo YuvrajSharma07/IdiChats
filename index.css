@@ -1,0 +1,128 @@
+html {
+	overflow: hidden
+}
+.mainnav {
+	float: left;
+	position: fixed;
+	width: 28%;
+	height: 100%;
+	background-color: #fff;
+	border-right: 1px solid rgba(0,0,0,0.7);
+	overflow: auto
+}
+.mainchat {
+	position: relative;
+	width: 72%;
+	float: right
+}
+.header {
+	padding: 20px;
+	background-color: #000;
+	color: #fff
+}
+.navheader {
+	background-color: rgba(0,0,0,0.7)
+}
+.chathead {
+	padding: 14px
+}
+.navbar-toggler {
+	outline: none !important;
+	margin-top: -8px;
+	cursor: pointer
+}
+.themebtn {
+	border: 4px solid #fff;
+	border-radius: 100%;
+	padding: 10px;
+	outline: none !important;
+	cursor: pointer;
+	transition: .4s ease-out
+}
+.themebtn:hover {
+	box-shadow: 3px 4px 12px rgba(0,0,0,0.9);
+	border-color: rgba(0,0,0,0.3)
+}
+.themebtn:active {
+	transition: none;
+	border-color: rgba(0,0,0,0.5)
+}
+.fontt {
+	border-radius: 0px;
+	padding: 8px;
+	margin: 4px
+}
+/* theme classes */
+
+.lbluetheme {
+	background-color: #1e88e5 !important
+}
+.dbluetheme {
+	background-color: #006699 !important
+}
+.tealtheme {
+	background-color: #008080 !important
+}
+.purpletheme {
+	background-color: #6f5499 !important
+}
+.lavendertheme {
+	background-color: #b378d3 !important
+}
+.darktheme {
+	background-color: #333333 !important
+}
+.gwhitetheme {
+	background-color: #eceeef !important
+}
+.whitetheme {
+	background-color: #f9f9f9 !important
+}
+.greytheme {
+	background-color: #616967 !important
+}
+.lgreentheme {
+	background-color: #4caf40 !important
+}
+.dgreentheme {
+	background-color: #318401 !important
+}
+.orangetheme {
+	background-color: #ed7214 !important
+}
+.yellowtheme {
+	background-color: #f5d900 !important
+}
+.productsans {
+	font-family: 'Product Sans' !important
+}
+.opensans {
+	font-family: 'Open Sans' !important
+}
+.roboto {
+	font-family: 'Roboto' !important
+}
+.ubuntu {
+	font-family: 'Ubuntu' !important
+}
+.montserrat {
+	font-family: 'Montserrat' !important
+}
+.quicksand {
+	font-family: 'Quicksand' !important
+}
+.josefinsans {
+	font-family: 'Josefin Sans' !important
+}
+.ptsans {
+	font-family: 'PT Sans' !important
+}
+.sourcesans {
+	font-family: 'Source Sans Pro' !important
+}
+.darkbg {
+	color: #fff !important
+}
+.lightbg {
+	color: #000 !important
+}
