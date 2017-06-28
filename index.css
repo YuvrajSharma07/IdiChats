@@ -1,57 +1,4 @@
-html {
-	overflow: hidden
-}
-.mainnav {
-	float: left;
-	position: fixed;
-	width: 28%;
-	height: 100%;
-	background-color: #fff;
-	border-right: 1px solid rgba(0,0,0,0.7);
-	overflow: auto
-}
-.mainchat {
-	position: relative;
-	width: 72%;
-	float: right
-}
-.header {
-	padding: 20px;
-	background-color: #000;
-	color: #fff
-}
-.navheader {
-	background-color: rgba(0,0,0,0.7)
-}
-.chathead {
-	padding: 14px
-}
-.navbar-toggler {
-	outline: none !important;
-	margin-top: -8px;
-	cursor: pointer
-}
-.themebtn {
-	border: 4px solid #fff;
-	border-radius: 100%;
-	padding: 10px;
-	outline: none !important;
-	cursor: pointer;
-	transition: .4s ease-out
-}
-.themebtn:hover {
-	box-shadow: 3px 4px 12px rgba(0,0,0,0.9);
-	border-color: rgba(0,0,0,0.3)
-}
-.themebtn:active {
-	transition: none;
-	border-color: rgba(0,0,0,0.5)
-}
-.fontt {
-	border-radius: 0px;
-	padding: 8px;
-	margin: 4px
-}
+
 /* theme classes */
 
 .lbluetheme {
@@ -93,8 +40,15 @@ html {
 .yellowtheme {
 	background-color: #f5d900 !important
 }
+.redtheme {
+	background-color: #d9534f !important
+}
+
+/* font classes */
+
 .productsans {
-	font-family: 'Product Sans' !important
+	font-family: 'Product Sans' !important;
+	letter-spacing: 1px
 }
 .opensans {
 	font-family: 'Open Sans' !important
@@ -120,9 +74,85 @@ html {
 .sourcesans {
 	font-family: 'Source Sans Pro' !important
 }
-.darkbg {
-	color: #fff !important
+
+/* color classes */
+
+.whitecolor {
+	color: #ffffff !important
 }
-.lightbg {
-	color: #000 !important
+.gwhitecolor {
+	color: #eceeef !important
+}
+.greycolor {
+	color: #616967 !important
+}
+.darkcolor {
+	color: #333333 !important
+}
+.blackcolor {
+	color: #000000 !important
+}
+
+/* other css */
+
+html {
+	overflow: hidden
+}
+button {
+	cursor: pointer;
+}
+.mainnav {
+	float: left;
+	position: fixed;
+	width: 28%;
+	height: 100%;
+	background-color: #fff;
+	border-right: 1px solid rgba(0,0,0,0.1);
+	overflow: auto
+}
+.mainchat {
+	position: relative;
+	width: 72%;
+	float: right
+}
+.header {
+	padding: 20px;
+	background-color: #000;
+	color: #fff
+}
+.navheader {
+	background-color: rgba(0,0,0,0.7)
+}
+.chathead {
+	padding: 14px
+}
+.navbar-toggler {
+	outline: none !important;
+	margin-top: -8px;
+}
+.themebtn {
+	border: 4px solid #fff;
+	border-radius: 100%;
+	padding: 10px;
+	outline: none !important;
+	transition: .4s ease-out
+}
+.themebtn:hover {
+	box-shadow: 3px 4px 12px rgba(0,0,0,0.9);
+	border-color: rgba(0,0,0,0.3)
+}
+.themebtn:active {
+	transition: none;
+	border-color: rgba(0,0,0,0.5)
+}
+.fontt {
+	border-radius: 0px;
+	padding: 8px;
+	margin: 4px
+}
+.colorbtn {
+	background-color: #000
+}
+.fonttactive {
+	box-shadow: 0px 0px 0px 2px
 }

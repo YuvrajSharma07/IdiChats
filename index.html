@@ -29,18 +29,47 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
+					<hr class="navhr">
 					<div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-inverse p-4">
-      <h4 class="text-white">Settings</h4>
-      <span class="text-muted">Change colour theme<br><br><button class="themebtn lbluetheme"></button> <button class="themebtn dbluetheme"></button> <button class="themebtn tealtheme"></button> <button class="themebtn purpletheme"></button> <button class="themebtn lavendertheme"></button> <button class="themebtn darktheme"></button> <button class="themebtn gwhitetheme"></button> <button class="themebtn whitetheme"></button> <button class="themebtn greytheme"></button> <button class="themebtn lgreentheme"></button> <button class="themebtn dgreentheme"></button> <button class="themebtn orangetheme"></button> <button class="themebtn yellowtheme"></button> </span><br><br>
-		<span class="text-muted">Customize font<br><br><button class="themebtn changetheme fontt productsans">Product Sans</button> <button class="themebtn changetheme fontt opensans">Open Sans</button> <button class="themebtn changetheme fontt roboto">Roboto</button> <button class="themebtn changetheme fontt ubuntu">Ubuntu</button> <button class="themebtn changetheme fontt montserrat">Montserrat</button> <button class="themebtn changetheme fontt quicksand">Quicksand</button> <button class="themebtn changetheme fontt josefinsans">Josefin Sans</button> <button class="themebtn changetheme fontt ptsans">PT Sans</button> <button class="themebtn changetheme fontt sourcesans">Source Sans Pro</button><br><br>
+    <div class="p-4">
+      <h4>Settings</h4>
+      <span>Change colour theme<br><br>
+		  <button class="themebtn lbluetheme" id="lbtheme"></button> 
+		  <button class="themebtn dbluetheme" id="dbtheme"></button> 
+		  <button class="themebtn tealtheme" id="ttheme"></button> 
+		  <button class="themebtn purpletheme" id="ptheme"></button> 
+		  <button class="themebtn lavendertheme" id="ltheme"></button> 
+		  <button class="themebtn darktheme" id="dtheme"></button> 
+		  <button class="themebtn gwhitetheme" id="gwtheme"></button> 
+		  <button class="themebtn whitetheme" id="wtheme"></button> 
+		  <button class="themebtn greytheme" id="gtheme"></button> 
+		  <button class="themebtn lgreentheme" id="lgtheme"></button> 
+		  <button class="themebtn dgreentheme" id="dgtheme"></button> 
+		  <button class="themebtn orangetheme" id="otheme"></button> 
+		  <button class="themebtn yellowtheme" id="ytheme"></button>
+		  <button class="themebtn redtheme" id="rtheme"></button> </span><br><br>
+		</span><br><br>
+		<span>Customize font<br><br>
+			<button class="themebtn btn-warning changetheme fontt productsans" id="psans">Product Sans</button> 
+			<button class="themebtn btn-warning changetheme fontt opensans" id="osans">Open Sans</button> 
+			<button class="themebtn btn-warning changetheme fontt roboto" id="robo">Roboto</button> 
+			<button class="themebtn btn-warning changetheme fontt ubuntu" id="ubun">Ubuntu</button> 
+			<button class="themebtn btn-warning changetheme fontt montserrat" id="mont">Montserrat</button> 
+			<button class="themebtn btn-warning changetheme fontt quicksand" id="quic">Quicksand</button> 
+			<button class="themebtn btn-warning changetheme fontt josefinsans" id="jose">Josefin Sans</button> 
+			<button class="themebtn btn-warning changetheme fontt ptsans" id="ptsans">PT Sans</button> 
+			<button class="themebtn btn-warning changetheme fontt sourcesans" id="ssans">Source Sans Pro</button><br><br>
                    <div class="input-group">
-                     <input type="text" class="form-control" placeholder="Type a value">
+                     <input type="text" class="form-control" placeholder="Type a value" id="pxval">
                      <span class="input-group-btn">
-                       <button class="btn btn-secondary" type="button">Px</button>
+                       <button class="btn btn-secondary" type="button" id="probtn">Px</button>
                      </span>
                    </div><br><br>
-			<button class="themebtn gwhitetheme colorbtn"></button> <button class="themebtn whitetheme colorbtn"></button> <button class="themebtn darktheme colorbtn"></button> <button class="themebtn greytheme colorbtn"></button>
+			<button class="themebtn whitetheme colorbtn" id="wcolor"></button> 
+			<button class="themebtn gwhitetheme colorbtn" id="gwcolor"></button> 
+			<button class="themebtn greytheme colorbtn" id="gcolor"></button>
+			<button class="themebtn darktheme colorbtn" id="dcolor"></button> 
+			<button class="themebtn colorbtn" id="bcolor"></button>
 		</span>
     </div>
   </div>
@@ -61,7 +90,7 @@
                    <div class="input-group">
                      <input type="text" class="form-control" placeholder="Send a message">
                      <span class="input-group-btn">
-                       <button class="btn btn-secondary" type="button">Go!</button>
+                       <button class="btn btn-success" type="button">Go!</button>
                      </span>
                    </div>
                  </div>
