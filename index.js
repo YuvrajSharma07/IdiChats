@@ -10,6 +10,7 @@ setTimeout(function () {
 
 document.getElementById('gwtheme').onclick = function() {
 	$(".header").addClass("gwhitetheme");
+	$(".navbar-toggler").addClass("bg-inverse");
 	$(".header").removeClass("greytheme");
 	$(".header").removeClass("lgreentheme");
 	$(".header").removeClass("dgreentheme");
@@ -38,6 +39,7 @@ document.getElementById('ytheme').onclick = function() {
 	$(".header").removeClass("dbluetheme");
 	$(".header").removeClass("lbluetheme");
 	$(".header").removeClass("whitetheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("redtheme");
 }
 document.getElementById('otheme').onclick = function() {
@@ -48,6 +50,7 @@ document.getElementById('otheme').onclick = function() {
 	$(".header").removeClass("yellowtheme");
 	$(".header").removeClass("gwhitetheme");
 	$(".header").removeClass("darktheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("lavendertheme");
 	$(".header").removeClass("purpletheme");
 	$(".header").removeClass("tealtheme");
@@ -61,6 +64,7 @@ document.getElementById('lbtheme').onclick = function() {
 	$(".header").removeClass("greytheme");
 	$(".header").removeClass("lgreentheme");
 	$(".header").removeClass("dgreentheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("orangetheme");
 	$(".header").removeClass("gwhitetheme");
 	$(".header").removeClass("darktheme");
@@ -77,6 +81,7 @@ document.getElementById('ltheme').onclick = function() {
 	$(".header").removeClass("greytheme");
 	$(".header").removeClass("lgreentheme");
 	$(".header").removeClass("dgreentheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("orangetheme");
 	$(".header").removeClass("gwhitetheme");
 	$(".header").removeClass("darktheme");
@@ -92,6 +97,7 @@ document.getElementById('dbtheme').onclick = function() {
 	$(".header").addClass("dbluetheme");
 	$(".header").removeClass("greytheme");
 	$(".header").removeClass("lgreentheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("dgreentheme");
 	$(".header").removeClass("orangetheme");
 	$(".header").removeClass("gwhitetheme");
@@ -108,6 +114,7 @@ document.getElementById('gtheme').onclick = function() {
 	$(".header").addClass("greytheme");
 	$(".header").removeClass("yellowtheme");
 	$(".header").removeClass("lgreentheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("dgreentheme");
 	$(".header").removeClass("orangetheme");
 	$(".header").removeClass("gwhitetheme");
@@ -124,6 +131,7 @@ document.getElementById('lgtheme').onclick = function() {
 	$(".header").addClass("lgreentheme");
 	$(".header").removeClass("greytheme");
 	$(".header").removeClass("yellowtheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("dgreentheme");
 	$(".header").removeClass("orangetheme");
 	$(".header").removeClass("gwhitetheme");
@@ -143,6 +151,7 @@ document.getElementById('dgtheme').onclick = function() {
 	$(".header").removeClass("yellowtheme");
 	$(".header").removeClass("orangetheme");
 	$(".header").removeClass("gwhitetheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("darktheme");
 	$(".header").removeClass("lavendertheme");
 	$(".header").removeClass("purpletheme");
@@ -158,6 +167,7 @@ document.getElementById('ptheme').onclick = function() {
 	$(".header").removeClass("lgreentheme");
 	$(".header").removeClass("dgreentheme");
 	$(".header").removeClass("orangetheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("gwhitetheme");
 	$(".header").removeClass("darktheme");
 	$(".header").removeClass("lavendertheme");
@@ -182,10 +192,12 @@ document.getElementById('dtheme').onclick = function() {
 	$(".header").removeClass("dbluetheme");
 	$(".header").removeClass("lbluetheme");
 	$(".header").removeClass("redtheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("whitetheme");
 }
 document.getElementById('wtheme').onclick = function() {
 	$(".header").addClass("whitetheme");
+	$(".navbar-toggler").addClass("bg-inverse");
 	$(".header").removeClass("greytheme");
 	$(".header").removeClass("lgreentheme");
 	$(".header").removeClass("dgreentheme");
@@ -214,6 +226,7 @@ document.getElementById('ttheme').onclick = function() {
 	$(".header").removeClass("dbluetheme");
 	$(".header").removeClass("lbluetheme");
 	$(".header").removeClass("redtheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("whitetheme");
 }
 document.getElementById('rtheme').onclick = function() {
@@ -230,6 +243,7 @@ document.getElementById('rtheme').onclick = function() {
 	$(".header").removeClass("dbluetheme");
 	$(".header").removeClass("lbluetheme");
 	$(".header").removeClass("tealtheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".header").removeClass("whitetheme");
 }
 

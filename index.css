@@ -54,25 +54,32 @@
 	font-family: 'Open Sans' !important
 }
 .roboto {
-	font-family: 'Roboto' !important
+	font-family: 'Roboto' !important;
+	letter-spacing: .5px
 }
 .ubuntu {
-	font-family: 'Ubuntu' !important
+	font-family: 'Ubuntu' !important;
+	letter-spacing: .5px
 }
 .montserrat {
-	font-family: 'Montserrat' !important
+	font-family: 'Montserrat' !important;
+	letter-spacing: 1px
 }
 .quicksand {
-	font-family: 'Quicksand' !important
+	font-family: 'Quicksand' !important;
+	letter-spacing: .3px
 }
 .josefinsans {
-	font-family: 'Josefin Sans' !important
+	font-family: 'Josefin Sans' !important;
+	letter-spacing: 1px
 }
 .ptsans {
-	font-family: 'PT Sans' !important
+	font-family: 'PT Sans' !important;
+	letter-spacing: 1px
 }
 .sourcesans {
-	font-family: 'Source Sans Pro' !important
+	font-family: 'Source Sans Pro' !important;
+	letter-spacing: 1px
 }
 
 /* color classes */
@@ -101,6 +108,9 @@ html {
 button {
 	cursor: pointer;
 }
+div {
+	transition: .4s ease-out color;
+}
 .mainnav {
 	float: left;
 	position: fixed;
@@ -118,7 +128,8 @@ button {
 .header {
 	padding: 20px;
 	background-color: #000;
-	color: #fff
+	color: #fff;
+	transition: .4s ease-out background-color;
 }
 .navheader {
 	background-color: rgba(0,0,0,0.7)
