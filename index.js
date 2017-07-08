@@ -9,397 +9,430 @@ setTimeout(function () {
 // bgcolor theme codes:
 
 document.getElementById('gwtheme').onclick = function() {
-	$(".header").addClass("gwhitetheme");
+	$(".bgtheme").addClass("gwhitetheme");
 	$(".navbar-toggler").addClass("bg-inverse");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('ytheme').onclick = function() {
-	$(".header").addClass("yellowtheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
+	$(".bgtheme").addClass("yellowtheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('otheme').onclick = function() {
-	$(".header").addClass("orangetheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
+	$(".bgtheme").addClass("orangetheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('lbtheme').onclick = function() {
-	$(".header").addClass("lbluetheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
+	$(".bgtheme").addClass("lbluetheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('ltheme').onclick = function() {
-	$(".header").addClass("lavendertheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
+	$(".bgtheme").addClass("lavendertheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('dbtheme').onclick = function() {
-	$(".header").addClass("dbluetheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
+	$(".bgtheme").addClass("dbluetheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('gtheme').onclick = function() {
-	$(".header").addClass("greytheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("lgreentheme");
+	$(".bgtheme").addClass("greytheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("lgreentheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('lgtheme').onclick = function() {
-	$(".header").addClass("lgreentheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("yellowtheme");
+	$(".bgtheme").addClass("lgreentheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("yellowtheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("whitetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("whitetheme");
+	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('dgtheme').onclick = function() {
-	$(".header").addClass("dgreentheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
+	$(".bgtheme").addClass("dgreentheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("redtheme");
-	$(".header").removeClass("whitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("redtheme");
+	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('ptheme').onclick = function() {
-	$(".header").addClass("purpletheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
+	$(".bgtheme").addClass("purpletheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("redtheme");
-	$(".header").removeClass("whitetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("redtheme");
+	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('dtheme').onclick = function() {
-	$(".header").addClass("darktheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").addClass("darktheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("redtheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("whitetheme");
+	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('wtheme').onclick = function() {
-	$(".header").addClass("whitetheme");
+	$(".bgtheme").addClass("whitetheme");
 	$(".navbar-toggler").addClass("bg-inverse");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("tealtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("redtheme");
-	$(".header").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("redtheme");
+	$(".bgtheme").removeClass("yellowtheme");
 }
 document.getElementById('ttheme').onclick = function() {
-	$(".header").addClass("tealtheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("redtheme");
+	$(".bgtheme").addClass("tealtheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("redtheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("whitetheme");
+	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('rtheme').onclick = function() {
-	$(".header").addClass("redtheme");
-	$(".header").removeClass("greytheme");
-	$(".header").removeClass("lgreentheme");
-	$(".header").removeClass("dgreentheme");
-	$(".header").removeClass("orangetheme");
-	$(".header").removeClass("gwhitetheme");
-	$(".header").removeClass("darktheme");
-	$(".header").removeClass("lavendertheme");
-	$(".header").removeClass("purpletheme");
-	$(".header").removeClass("yellowtheme");
-	$(".header").removeClass("dbluetheme");
-	$(".header").removeClass("lbluetheme");
-	$(".header").removeClass("tealtheme");
+	$(".bgtheme").addClass("redtheme");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("tealtheme");
 	$(".navbar-toggler").removeClass("bg-inverse");
-	$(".header").removeClass("whitetheme");
+	$(".bgtheme").removeClass("whitetheme");
 }
 
 // fontfamily codes:
 
 document.getElementById('psans').onclick = function() {
-	$('body').addClass("productsans");
+	$(".fschange").addClass("productsans");
 	// $(".productsans").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('osans').onclick = function() {
-	$('body').addClass("opensans");
+	$(".fschange").addClass("opensans");
 	// $(".opensans").addClass("fonttactive");
-	$('body').removeClass("productsans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('robo').onclick = function() {
-	$('body').addClass("roboto");
+	$(".fschange").addClass("roboto");
 	// $(".roboto").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("productsans");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('ubun').onclick = function() {
-	$('body').addClass("ubuntu");
+	$(".fschange").addClass("ubuntu");
 	// $(".ubuntu").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("productsans");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('mont').onclick = function() {
-	$('body').addClass("montserrat");
+	$(".fschange").addClass("montserrat");
 	// $(".montserrat").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("productsans");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('quic').onclick = function() {
-	$('body').addClass("quicksand");
+	$(".fschange").addClass("quicksand");
 	// $(".quicksand").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("productsans");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('jose').onclick = function() {
-	$('body').addClass("josefinsans");
+	$(".fschange").addClass("josefinsans");
 	// $(".josefinsans").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("productsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('ptsans').onclick = function() {
-	$('body').addClass("ptsans");
+	$(".fschange").addClass("ptsans");
 	// $(".ptsans").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("productsans");
-	$('body').removeClass("sourcesans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('ssans').onclick = function() {
-	$('body').addClass("sourcesans");
+	$(".fschange").addClass("sourcesans");
 	// $(".sourcesans").addClass("fonttactive");
-	$('body').removeClass("opensans");
-	$('body').removeClass("roboto");
-	$('body').removeClass("ubuntu");
-	$('body').removeClass("montserrat");
-	$('body').removeClass("quicksand");
-	$('body').removeClass("josefinsans");
-	$('body').removeClass("ptsans");
-	$('body').removeClass("productsans");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("productsans");
 }
 
 // color theme codes:
 
 document.getElementById('wcolor').onclick = function() {
-	$('div').addClass("whitecolor");
-	$('div').removeClass("gwhitecolor");
-	$('div').removeClass("greycolor");
-	$('div').removeClass("darkcolor");
-	$('div').removeClass("blackcolor");
+	$(".colortheme").addClass("whitecolor");
+	$(".colortheme").removeClass("gwhitecolor");
+	$(".colortheme").removeClass("greycolor");
+	$(".colortheme").removeClass("darkcolor");
+	$(".colortheme").removeClass("blackcolor");
 }
 document.getElementById('gwcolor').onclick = function() {
-	$('div').addClass("gwhitecolor");
-	$('div').removeClass("whitecolor");
-	$('div').removeClass("greycolor");
-	$('div').removeClass("darkcolor");
-	$('div').removeClass("blackcolor");
+	$(".colortheme").addClass("gwhitecolor");
+	$(".colortheme").removeClass("whitecolor");
+	$(".colortheme").removeClass("greycolor");
+	$(".colortheme").removeClass("darkcolor");
+	$(".colortheme").removeClass("blackcolor");
 }
 document.getElementById('gcolor').onclick = function() {
-	$('div').addClass("greycolor");
-	$('div').removeClass("gwhitecolor");
-	$('div').removeClass("whitecolor");
-	$('div').removeClass("darkcolor");
-	$('div').removeClass("blackcolor");
+	$(".colortheme").addClass("greycolor");
+	$(".colortheme").removeClass("gwhitecolor");
+	$(".colortheme").removeClass("whitecolor");
+	$(".colortheme").removeClass("darkcolor");
+	$(".colortheme").removeClass("blackcolor");
 }
 document.getElementById('dcolor').onclick = function() {
-	$('div').addClass("darkcolor");
-	$('div').removeClass("gwhitecolor");
-	$('div').removeClass("greycolor");
-	$('div').removeClass("whitecolor");
-	$('div').removeClass("blackcolor");
+	$(".colortheme").addClass("darkcolor");
+	$(".colortheme").removeClass("gwhitecolor");
+	$(".colortheme").removeClass("greycolor");
+	$(".colortheme").removeClass("whitecolor");
+	$(".colortheme").removeClass("blackcolor");
 }
 document.getElementById('bcolor').onclick = function() {
-	$('div').addClass("blackcolor");
-	$('div').removeClass("gwhitecolor");
-	$('div').removeClass("greycolor");
-	$('div').removeClass("darkcolor");
-	$('div').removeClass("whitecolor");
+	$(".colortheme").addClass("blackcolor");
+	$(".colortheme").removeClass("gwhitecolor");
+	$(".colortheme").removeClass("greycolor");
+	$(".colortheme").removeClass("darkcolor");
+	$(".colortheme").removeClass("whitecolor");
 }
 
 // fontsize codes:
-/*
-document.getElementById('probtn').onclick = function() {
+
+function fontsize() {
 	var pxval = document.getElementById('pxval').value;
-	$('html').fontSize = pxval "px";
+	$('html').style.fontSize = "120px";
 }
-*/
+
+// reset codes:
+
+document.getElementById('resetbtn').onclick = function() {
+	$(".colortheme").removeClass("gwhitecolor");
+	$(".colortheme").removeClass("greycolor");
+	$(".colortheme").removeClass("darkcolor");
+	$(".colortheme").removeClass("blackcolor");
+	$(".colortheme").removeClass("whitecolor");
+	$(".fschange").removeClass("opensans");
+	$(".fschange").removeClass("roboto");
+	$(".fschange").removeClass("ubuntu");
+	$(".fschange").removeClass("montserrat");
+	$(".fschange").removeClass("quicksand");
+	$(".fschange").removeClass("josefinsans");
+	$(".fschange").removeClass("ptsans");
+	$(".fschange").removeClass("productsans");
+	$(".fschange").removeClass("sourcesans");
+	$(".bgtheme").removeClass("greytheme");
+	$(".bgtheme").removeClass("lgreentheme");
+	$(".bgtheme").removeClass("dgreentheme");
+	$(".bgtheme").removeClass("orangetheme");
+	$(".bgtheme").removeClass("gwhitetheme");
+	$(".bgtheme").removeClass("darktheme");
+	$(".bgtheme").removeClass("lavendertheme");
+	$(".bgtheme").removeClass("purpletheme");
+	$(".bgtheme").removeClass("yellowtheme");
+	$(".bgtheme").removeClass("dbluetheme");
+	$(".bgtheme").removeClass("lbluetheme");
+	$(".bgtheme").removeClass("tealtheme");
+	$(".navbar-toggler").removeClass("bg-inverse");
+	$(".bgtheme").removeClass("redtheme");
+	$(".bgtheme").removeClass("whitetheme");
+}

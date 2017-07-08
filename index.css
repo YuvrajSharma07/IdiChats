@@ -108,16 +108,12 @@ html {
 button {
 	cursor: pointer;
 }
-div {
-	transition: .4s ease-out color;
-}
 .mainnav {
 	float: left;
 	position: fixed;
 	width: 28%;
 	height: 100%;
 	background-color: #fff;
-	border-right: 1px solid rgba(0,0,0,0.1);
 	overflow: auto
 }
 .mainchat {
@@ -125,17 +121,18 @@ div {
 	width: 72%;
 	float: right
 }
+.mainchat:focus .chatbox::after {
+	border: 2px solid rgba(30, 136, 229, 0.4)
+}
 .header {
 	padding: 20px;
 	background-color: #000;
 	color: #fff;
-	transition: .4s ease-out background-color;
+	border-left: 1px solid #eee;
 }
 .navheader {
-	background-color: rgba(0,0,0,0.7)
-}
-.chathead {
-	padding: 14px
+	background-color: rgba(0,0,0,0.8);
+	border: 0px
 }
 .navbar-toggler {
 	outline: none !important;
@@ -166,4 +163,37 @@ div {
 }
 .fonttactive {
 	box-shadow: 0px 0px 0px 2px
+}
+.chatinput {
+	padding: 0.75rem;
+	background-color: #000
+}
+.chatbox {
+	height: 35.1rem;
+	border: 2px solid rgba(0,0,0,0.2);
+	padding: 1rem;
+	overflow-y: auto;
+	overflow-x: hidden
+}
+.bgtheme {
+	transition: .4s ease-out;
+}
+.messageheads {
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.3);
+	width: auto;
+	height: auto;
+	margin: 6px 0px;
+	border-radius: 10px;
+	position: relative;
+	word-wrap: break-word;
+	max-width: 85%;
+	white-space: pre-wrap;
+	direction: ltr
+}
+#sentmessage {
+	float: right
+}
+#receivedmessage {
+	float: left
 }
