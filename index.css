@@ -108,6 +108,9 @@ html {
 button {
 	cursor: pointer;
 }
+select {
+	outline: none
+}
 .mainnav {
 	float: left;
 	position: fixed;
@@ -129,6 +132,9 @@ button {
 	background-color: #000;
 	color: #fff;
 	border-left: 1px solid #eee;
+}
+.navhr {
+	border-color: #eee
 }
 .navheader {
 	background-color: rgba(0,0,0,0.8);
@@ -166,7 +172,8 @@ button {
 }
 .chatinput {
 	padding: 0.75rem;
-	background-color: #000
+	background-color: #000;
+	padding-bottom: 2rem
 }
 .chatbox {
 	height: 35.1rem;

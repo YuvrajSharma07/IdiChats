@@ -398,9 +398,9 @@ document.getElementById('bcolor').onclick = function() {
 
 // fontsize codes:
 
-function fontsize() {
-	var pxval = document.getElementById('pxval').value;
-	$('html').style.fontSize = "120px";
+function fscha(selectTag) {
+    var listValue = selectTag.options[selectTag.selectedIndex].text;
+	$(".fschange").css('font-size', listValue);
 }
 
 // reset codes:
@@ -435,4 +435,6 @@ document.getElementById('resetbtn').onclick = function() {
 	$(".navbar-toggler").removeClass("bg-inverse");
 	$(".bgtheme").removeClass("redtheme");
 	$(".bgtheme").removeClass("whitetheme");
+	$(".fschange").css('font-size', '15px');
+	$(".btn-success").css('font-size', '18.75px');
 }
