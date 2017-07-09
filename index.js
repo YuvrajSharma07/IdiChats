@@ -10,6 +10,7 @@ setTimeout(function () {
 
 document.getElementById('gwtheme').onclick = function() {
 	$(".bgtheme").addClass("gwhitetheme");
+	$(".colortheme").removeClass("whitecolor");
 	$(".navbar-toggler").addClass("bg-inverse");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -26,6 +27,7 @@ document.getElementById('gwtheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('ytheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("yellowtheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -43,6 +45,7 @@ document.getElementById('ytheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('otheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("orangetheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -60,6 +63,7 @@ document.getElementById('otheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('lbtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("lbluetheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -77,6 +81,7 @@ document.getElementById('lbtheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('ltheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("lavendertheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -94,6 +99,7 @@ document.getElementById('ltheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('dbtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("dbluetheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -111,6 +117,7 @@ document.getElementById('dbtheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('gtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("greytheme");
 	$(".bgtheme").removeClass("yellowtheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -128,6 +135,7 @@ document.getElementById('gtheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('lgtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("lgreentheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("yellowtheme");
@@ -145,6 +153,7 @@ document.getElementById('lgtheme').onclick = function() {
 	$(".bgtheme").removeClass("redtheme");
 }
 document.getElementById('dgtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("dgreentheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -162,6 +171,7 @@ document.getElementById('dgtheme').onclick = function() {
 	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('ptheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("purpletheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -179,6 +189,7 @@ document.getElementById('ptheme').onclick = function() {
 	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('dtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("darktheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -197,6 +208,7 @@ document.getElementById('dtheme').onclick = function() {
 }
 document.getElementById('wtheme').onclick = function() {
 	$(".bgtheme").addClass("whitetheme");
+	$(".colortheme").removeClass("whitecolor");
 	$(".navbar-toggler").addClass("bg-inverse");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -213,6 +225,7 @@ document.getElementById('wtheme').onclick = function() {
 	$(".bgtheme").removeClass("yellowtheme");
 }
 document.getElementById('ttheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("tealtheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -230,6 +243,7 @@ document.getElementById('ttheme').onclick = function() {
 	$(".bgtheme").removeClass("whitetheme");
 }
 document.getElementById('rtheme').onclick = function() {
+	$(".colortheme").addClass("whitecolor");
 	$(".bgtheme").addClass("redtheme");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
@@ -401,6 +415,11 @@ document.getElementById('bcolor').onclick = function() {
 function fscha(selectTag) {
     var listValue = selectTag.options[selectTag.selectedIndex].text;
 	$(".fschange").css('font-size', listValue);
+	if (listValue <= "14px") {
+		$(".seth").css('font-size', '1rem');
+	} else {
+		$(".seth").css('font-size', '1.5rem');
+	}
 }
 
 // reset codes:
@@ -437,4 +456,5 @@ document.getElementById('resetbtn').onclick = function() {
 	$(".bgtheme").removeClass("whitetheme");
 	$(".fschange").css('font-size', '15px');
 	$(".btn-success").css('font-size', '18.75px');
+	$(".seth").css('font-size', '1.5rem');
 }
