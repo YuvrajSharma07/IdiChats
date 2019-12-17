@@ -45,11 +45,6 @@
 }
 
 /* font classes */
-
-.productsans {
-	font-family: 'Product Sans' !important;
-	letter-spacing: 1px
-}
 .opensans {
 	font-family: 'Open Sans' !important
 }
@@ -199,8 +194,9 @@ select {
 	direction: ltr
 }
 #sentmessage {
-	float: right
+	float: right;
 }
 #receivedmessage {
-	float: left
+	float: left;
+    filter: hue-rotate(100deg)
 }

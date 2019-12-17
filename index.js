@@ -264,8 +264,6 @@ document.getElementById('rtheme').onclick = function() {
 // fontfamily codes:
 
 document.getElementById('psans').onclick = function() {
-	$(".fschange").addClass("productsans");
-	// $(".productsans").addClass("fonttactive");
 	$(".fschange").removeClass("opensans");
 	$(".fschange").removeClass("roboto");
 	$(".fschange").removeClass("ubuntu");
@@ -278,7 +276,6 @@ document.getElementById('psans').onclick = function() {
 document.getElementById('osans').onclick = function() {
 	$(".fschange").addClass("opensans");
 	// $(".opensans").addClass("fonttactive");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("roboto");
 	$(".fschange").removeClass("ubuntu");
 	$(".fschange").removeClass("montserrat");
@@ -291,7 +288,6 @@ document.getElementById('robo').onclick = function() {
 	$(".fschange").addClass("roboto");
 	// $(".roboto").addClass("fonttactive");
 	$(".fschange").removeClass("opensans");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("ubuntu");
 	$(".fschange").removeClass("montserrat");
 	$(".fschange").removeClass("quicksand");
@@ -304,7 +300,6 @@ document.getElementById('ubun').onclick = function() {
 	// $(".ubuntu").addClass("fonttactive");
 	$(".fschange").removeClass("opensans");
 	$(".fschange").removeClass("roboto");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("montserrat");
 	$(".fschange").removeClass("quicksand");
 	$(".fschange").removeClass("josefinsans");
@@ -317,7 +312,6 @@ document.getElementById('mont').onclick = function() {
 	$(".fschange").removeClass("opensans");
 	$(".fschange").removeClass("roboto");
 	$(".fschange").removeClass("ubuntu");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("quicksand");
 	$(".fschange").removeClass("josefinsans");
 	$(".fschange").removeClass("ptsans");
@@ -330,7 +324,6 @@ document.getElementById('quic').onclick = function() {
 	$(".fschange").removeClass("roboto");
 	$(".fschange").removeClass("ubuntu");
 	$(".fschange").removeClass("montserrat");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("josefinsans");
 	$(".fschange").removeClass("ptsans");
 	$(".fschange").removeClass("sourcesans");
@@ -343,7 +336,6 @@ document.getElementById('jose').onclick = function() {
 	$(".fschange").removeClass("ubuntu");
 	$(".fschange").removeClass("montserrat");
 	$(".fschange").removeClass("quicksand");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("ptsans");
 	$(".fschange").removeClass("sourcesans");
 }
@@ -356,7 +348,6 @@ document.getElementById('ptsans').onclick = function() {
 	$(".fschange").removeClass("montserrat");
 	$(".fschange").removeClass("quicksand");
 	$(".fschange").removeClass("josefinsans");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("sourcesans");
 }
 document.getElementById('ssans').onclick = function() {
@@ -369,7 +360,6 @@ document.getElementById('ssans').onclick = function() {
 	$(".fschange").removeClass("quicksand");
 	$(".fschange").removeClass("josefinsans");
 	$(".fschange").removeClass("ptsans");
-	$(".fschange").removeClass("productsans");
 }
 
 // color theme codes:
@@ -437,7 +427,6 @@ document.getElementById('resetbtn').onclick = function() {
 	$(".fschange").removeClass("quicksand");
 	$(".fschange").removeClass("josefinsans");
 	$(".fschange").removeClass("ptsans");
-	$(".fschange").removeClass("productsans");
 	$(".fschange").removeClass("sourcesans");
 	$(".bgtheme").removeClass("greytheme");
 	$(".bgtheme").removeClass("lgreentheme");
