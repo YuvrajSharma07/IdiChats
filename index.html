@@ -1,125 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Welcome to .....</title>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-	<div class="mainbod">
-		<div class="mainnav">
-			<div class="header navheader bgtheme fschange colortheme">
-				<div class="pos-f-t">
-  <nav class="navbar navbar-inverse">
-	  <span class="navtext fschange colortheme">IdiChats</span>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-					<hr class="navhr">
-					<div class="collapse" id="navbarToggleExternalContent">
-    <div class="p-4">
-      <h4 class="fschange colortheme seth">Settings</h4>
-      <span>Change colour theme<br><br>
-		  <button class="themebtn lbluetheme" id="lbtheme"></button> 
-		  <button class="themebtn dbluetheme" id="dbtheme"></button> 
-		  <button class="themebtn tealtheme" id="ttheme"></button> 
-		  <button class="themebtn purpletheme" id="ptheme"></button> 
-		  <button class="themebtn lavendertheme" id="ltheme"></button> 
-		  <button class="themebtn darktheme" id="dtheme"></button> 
-		  <button class="themebtn gwhitetheme" id="gwtheme"></button> 
-		  <button class="themebtn whitetheme" id="wtheme"></button> 
-		  <button class="themebtn greytheme" id="gtheme"></button> 
-		  <button class="themebtn lgreentheme" id="lgtheme"></button> 
-		  <button class="themebtn dgreentheme" id="dgtheme"></button> 
-		  <button class="themebtn orangetheme" id="otheme"></button> 
-		  <button class="themebtn yellowtheme" id="ytheme"></button>
-		  <button class="themebtn redtheme" id="rtheme"></button></span><br><br><br><br>
-		<span>Customize font<br><br>
-			<button class="themebtn btn-warning changetheme fontt opensans" id="osans">Open Sans</button> 
-			<button class="themebtn btn-warning changetheme fontt roboto" id="robo">Roboto</button> 
-			<button class="themebtn btn-warning changetheme fontt ubuntu" id="ubun">Ubuntu</button> 
-			<button class="themebtn btn-warning changetheme fontt montserrat" id="mont">Montserrat</button> 
-			<button class="themebtn btn-warning changetheme fontt quicksand" id="quic">Quicksand</button> 
-			<button class="themebtn btn-warning changetheme fontt josefinsans" id="jose">Josefin Sans</button> 
-			<button class="themebtn btn-warning changetheme fontt ptsans" id="ptsans">PT Sans</button> 
-			<button class="themebtn btn-warning changetheme fontt sourcesans" id="ssans">Source Sans Pro</button><br><br>
-            <select onchange="fscha(this);">
-             <option>10px</option>
-             <option>12px</option>
-             <option>15px</option>
-             <option>16px</option>
-             <option>18px</option>
-             <option>20px</option>
-             <option>22px</option>
-             <option>24px</option>
-             <option>26px</option>
-             <option>28px</option>
-             <option>30px</option>
-             <option>100px</option>
-           </select><br><br>
-			<i><b>Note:</b> 15px is the default value.</i>
-			<br><br>
-			<button class="themebtn whitetheme colorbtn" id="wcolor"></button> 
-			<button class="themebtn gwhitetheme colorbtn" id="gwcolor"></button> 
-			<button class="themebtn greytheme colorbtn" id="gcolor"></button>
-			<button class="themebtn darktheme colorbtn" id="dcolor"></button> 
-			<button class="themebtn colorbtn" id="bcolor"></button>
-		</span><br><br><br><br>
-		<span>Wanna reset all the settings?<br><br>
-						<button class="themebtn btn-danger changetheme fontt" id="resetbtn">Click Here Bruh!</button>
-						</span>
-    </div>
-  </div>
-</div>
-
-				<!-- 
-<span class="settings" id="settingsbtn"><i class="fa fa-bars seticon" aria-hidden="true"></i></span> 
--->
-			</div>
-	<script src="index.js"></script>
-		</div>
-		<div class="mainchat">
-			<div class="header bgtheme fschange colortheme">You are chatting with '%%client%%'</div>
-			<div class="chathead">
-			<div class="chatbox" id="messages">
-				<div class="messageheads fschange bgtheme colortheme" id="receivedmessage">Hey there! wazzup?</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="sentmessage">nothing...</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="receivedmessage">Hey there! wazzup?</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="receivedmessage">Hey there! wazzup?</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="sentmessage">nothing...</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="receivedmessage">This handout will help you understand how paragraphs are formed, how to develop stronger paragraphs, and how to completely and clearly express your ideas.</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="sentmessage">This handout will help you understand how paragraphs are formed, how to develop stronger paragraphs, and how to completely and clearly express your ideas.</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="sentmessage">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph. sent by Yuv</div><br><br><br>
-				<div class="messageheads fschange bgtheme colortheme" id="receivedmessage">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</div><br><br><br>
-				</div>
-			<div class="chatinput bgtheme fschange colortheme">
-			<div class="col-lg-12">
-                   <div class="input-group input-group-lg">
-                     <input type="text" class="form-control" placeholder="Send a message">
-                     <span class="input-group-btn">
-                       <button class="btn btn-success fschange" type="button">Go!</button>
-                     </span>
-                   </div>
-                 </div>
-			</div>
-			</div>
-			</div>
-		</div>
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A small chatting system">
+        <meta name="author" content="Yuvraj Sharma">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>IdiChats</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="full">
+        <div class="display-4 text-center p-5 open-sans">Welcome back, <span class="username"></span></div>
+        <main class="container">
+            <div class="allModals">
+                <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="settingsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="settingsLabel">Settings</h1>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <h3>Theme</h3>
+                                <div class="btn-group theme-group" role="group">
+                                    <button class="btn btn-light" id="theme_light">Light</button>
+                                    <button class="btn btn-dark" id="theme_dark">Dark</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+                                <button type="button" class="btn btn-success"><i class="fa fa-save"></i> Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="clearfix">
+                                <button class="btn btn-outline-danger float-left" type="button" id="logout"><i class="fa fa-power-off"></i> Log out</button>
+                                <button class="btn btn-outline-dark float-right" type="button" data-toggle="modal" data-target="#settings"><i class="fa fa-gear"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-3" id="chat_body">
+                                        <fieldset><legend>The beginning</legend></fieldset>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Write a message">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-success" id="send_message"><i class="fa fa-send"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+        <script src="index.js"></script>
+        <script src="init.js"></script>
+        <script src="auth.js"></script>
+        <script src="chat.js"></script>
+        <script src="user.js"></script>
+    </body>
 </html>

@@ -1,202 +1,132 @@
-
-/* theme classes */
-
-.lbluetheme {
-	background-color: #1e88e5 !important
-}
-.dbluetheme {
-	background-color: #006699 !important
-}
-.tealtheme {
-	background-color: #008080 !important
-}
-.purpletheme {
-	background-color: #6f5499 !important
-}
-.lavendertheme {
-	background-color: #b378d3 !important
-}
-.darktheme {
-	background-color: #333333 !important
-}
-.gwhitetheme {
-	background-color: #eceeef !important
-}
-.whitetheme {
-	background-color: #f9f9f9 !important
-}
-.greytheme {
-	background-color: #616967 !important
-}
-.lgreentheme {
-	background-color: #4caf40 !important
-}
-.dgreentheme {
-	background-color: #318401 !important
-}
-.orangetheme {
-	background-color: #ed7214 !important
-}
-.yellowtheme {
-	background-color: #f5d900 !important
-}
-.redtheme {
-	background-color: #d9534f !important
+/* line 1, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+input, button, select, textarea {
+  cursor: pointer;
+  outline: none;
+  font-family: 'Open Sans';
 }
 
-/* font classes */
-.opensans {
-	font-family: 'Open Sans' !important
-}
-.roboto {
-	font-family: 'Roboto' !important;
-	letter-spacing: .5px
-}
-.ubuntu {
-	font-family: 'Ubuntu' !important;
-	letter-spacing: .5px
-}
-.montserrat {
-	font-family: 'Montserrat' !important;
-	letter-spacing: 1px
-}
-.quicksand {
-	font-family: 'Quicksand' !important;
-	letter-spacing: .3px
-}
-.josefinsans {
-	font-family: 'Josefin Sans' !important;
-	letter-spacing: 1px
-}
-.ptsans {
-	font-family: 'PT Sans' !important;
-	letter-spacing: 1px
-}
-.sourcesans {
-	font-family: 'Source Sans Pro' !important;
-	letter-spacing: 1px
+/* line 6, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
 
-/* color classes */
-
-.whitecolor {
-	color: #ffffff !important
-}
-.gwhitecolor {
-	color: #eceeef !important
-}
-.greycolor {
-	color: #616967 !important
-}
-.darkcolor {
-	color: #333333 !important
-}
-.blackcolor {
-	color: #000000 !important
+/* line 10, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.close {
+  font-size: 3.5rem;
+  font-family: 'Montserrat';
+  font-weight: 200;
+  text-shadow: none;
 }
 
-/* other css */
+/* line 16, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+#chat_body {
+  overflow: hidden;
+  overflow-y: scroll;
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.125);
+}
 
-html {
-	overflow: hidden
+/* line 21, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+#chat_body .float-left {
+  filter: saturate(0.6);
+  border-bottom-left-radius: 0px;
 }
-button {
-	cursor: pointer;
+
+/* line 25, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+#chat_body .float-right {
+  border-bottom-right-radius: 0px;
 }
-select {
-	outline: none
+
+/* line 28, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+#chat_body p {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+  border-radius: 100px;
 }
-.mainnav {
-	float: left;
-	position: fixed;
-	width: 28%;
-	height: 100%;
-	background-color: #fff;
-	overflow: auto
+
+/* line 33, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+#chat_body fieldset {
+  border-top: 5px dotted rgba(0, 0, 0, 0.2);
 }
-.mainchat {
-	position: relative;
-	width: 72%;
-	float: right
+
+/* line 36, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+#chat_body fieldset legend {
+  width: auto;
+  font-family: 'montserrat';
+  padding: 1rem;
+  text-align: center;
 }
-.mainchat:focus .chatbox::after {
-	border: 2px solid rgba(30, 136, 229, 0.4)
+
+/* line 42, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.card, .form-control {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.2);
 }
-.header {
-	padding: 20px;
-	background-color: #000;
-	color: #fff;
-	border-left: 1px solid #eee;
+
+/* line 46, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+body.bg-dark #chat_body p {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
-.navhr {
-	border-color: #eee
+
+/* line 50, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+body.bg-dark .form-control {
+  color: rgba(255, 255, 255, 0.7);
 }
-.navheader {
-	background-color: rgba(0,0,0,0.8);
-	border: 0px
+
+/* line 62, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.form-control {
+  background-color: inherit !important;
 }
-.navbar-toggler {
-	outline: none !important;
-	margin-top: -8px;
+
+/* line 65, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.lbluetheme p {
+  background-color: rgba(30, 136, 229, 0.3) !important;
 }
-.themebtn {
-	border: 4px solid #fff;
-	border-radius: 100%;
-	padding: 10px;
-	outline: none !important;
-	transition: .4s ease-out
+
+/* line 68, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.dbluetheme p {
+  background-color: rgba(0, 102, 153, 0.3) !important;
 }
-.themebtn:hover {
-	box-shadow: 3px 4px 12px rgba(0,0,0,0.9);
-	border-color: rgba(0,0,0,0.3)
+
+/* line 71, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.tealtheme p {
+  background-color: rgba(0, 128, 128, 0.3) !important;
 }
-.themebtn:active {
-	transition: none;
-	border-color: rgba(0,0,0,0.5)
+
+/* line 74, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.purpletheme p {
+  background-color: rgba(111, 84, 153, 0.3) !important;
 }
-.fontt {
-	border-radius: 0px;
-	padding: 8px;
-	margin: 4px
+
+/* line 77, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.lavendertheme p {
+  background-color: rgba(179, 120, 211, 0.3) !important;
 }
-.colorbtn {
-	background-color: #000
+
+/* line 80, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.lgreentheme p {
+  background-color: rgba(76, 175, 64, 0.3) !important;
 }
-.fonttactive {
-	box-shadow: 0px 0px 0px 2px
+
+/* line 83, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.orangetheme p {
+  background-color: rgba(237, 114, 20, 0.3) !important;
 }
-.chatinput {
-	padding: 0.75rem;
-	background-color: #000;
-	padding-bottom: 2rem
+
+/* line 86, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.yellowtheme p {
+  background-color: rgba(255, 193, 7, 0.3) !important;
 }
-.chatbox {
-	height: 35.1rem;
-	border: 2px solid rgba(0,0,0,0.2);
-	padding: 1rem;
-	overflow-y: auto;
-	overflow-x: hidden
+
+/* line 89, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+.redtheme p {
+  background-color: rgba(217, 83, 79, 0.3) !important;
 }
-.bgtheme {
-	transition: .4s ease-out;
+
+/* line 92, /Users/yuvrajsharma/Desktop/GithubRepo/IdiChats/scss/index.scss */
+body.bg-dark .close {
+  color: #fff;
 }
-.messageheads {
-	padding: 10px;
-	border: 1px solid rgba(0,0,0,0.3);
-	width: auto;
-	height: auto;
-	margin: 6px 0px;
-	border-radius: 10px;
-	position: relative;
-	word-wrap: break-word;
-	max-width: 85%;
-	white-space: pre-wrap;
-	direction: ltr
-}
-#sentmessage {
-	float: right;
-}
-#receivedmessage {
-	float: left;
-    filter: hue-rotate(100deg)
-}
+
+/*# sourceMappingURL=../index.map */

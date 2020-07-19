@@ -1,0 +1,95 @@
+input, button, select, textarea {
+	cursor: pointer;
+	outline: none;
+    font-family: 'Open Sans'
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+    font-weight: 300
+}
+.close {
+    font-size: 3.5rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    text-shadow: none
+}
+#chat_body {
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: inset 0px 0px 15px rgba(0,0,0,.125)
+}
+#chat_body .float-left {
+    filter: saturate(0.6);
+    border-bottom-left-radius: 0px;
+}
+#chat_body .float-right {
+    border-bottom-right-radius: 0px
+}
+#chat_body p {
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 0.5rem;
+    border-radius: 100px
+}
+#chat_body fieldset {
+    border-top: 5px dotted rgba(0,0,0,0.2)
+}
+#chat_body fieldset legend {
+    width: auto;
+    font-family: 'montserrat';
+    padding: 1rem;
+    text-align: center
+}
+.card, .form-control {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0.2)
+}
+body.bg-dark #chat_body p {
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.2);
+}
+body.bg-dark .form-control {
+    color: rgba(#fff, 0.7)
+}
+$lblue: #1e88e5;
+$dblue: #006699;
+$lavender: #b378d3;
+$lgreen: #4caf40;
+$orange: #ed7214;
+$yellow: #ffc107;
+$teal: #008080;
+$red: #d9534f;
+$alphathree: 0.3;
+.form-control {
+    background-color: inherit !important
+}
+.lbluetheme p {
+	background-color: rgba($lblue, $alphathree) !important
+}
+.dbluetheme p {
+	background-color: rgba($dblue, $alphathree) !important;
+}
+.tealtheme p {
+	background-color: rgba($teal, $alphathree) !important;
+}
+.purpletheme p {
+	background-color: rgba(111, 84, 153, $alphathree) !important;
+}
+.lavendertheme p {
+	background-color: rgba($lavender, $alphathree) !important;
+}
+.lgreentheme p {
+	background-color: rgba($lgreen, $alphathree) !important;
+}
+.orangetheme p {
+	background-color: rgba($orange, $alphathree) !important;
+}
+.yellowtheme p {
+	background-color: rgba($yellow, $alphathree) !important;
+}
+.redtheme p {
+	background-color: rgba($red, $alphathree) !important;
+}
+body.bg-dark .close {
+    color: #fff
+}
+//background-color: rgba(red($color), green($color), blue($color), 0.2);
