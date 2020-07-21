@@ -1,0 +1,138 @@
+* {
+  transition: .4s ease-out;
+}
+input, button, select, textarea {
+  cursor: pointer;
+  outline: none;
+  font-family: 'Open Sans';
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+.close {
+    font-size: 3.5rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    text-shadow: none;
+}
+main {
+    animation: 1s fadein ease-out;
+    -webkit-animation: 1s fadein ease-out;
+}
+#chat_body, #theme_viewer {
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.125);
+    height: 100%;
+}
+
+#chat_body p.float-left,
+#theme_viewer p.float-left {
+    filter: saturate(0.6);
+    border-top-left-radius: 0px;
+    text-align: left
+}
+
+#chat_body p.float-right,
+#theme_viewer p.float-right {
+    filter: brightness(1.15);
+    border-top-right-radius: 0px;
+    text-align: right
+}
+
+#chat_body p,
+#theme_viewer p {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+/*    border: 1px solid rgba(0, 0, 0, 0.2);*/
+    border: 0;
+    animation: 1s zoom ease-in;
+    -webkit-animation: 1s zoom ease-in;
+    float: none !important
+}
+#chat_body fieldset {
+    border-top: 5px dotted rgba(0, 0, 0, 0.2);
+}
+
+#chat_body fieldset legend {
+    width: auto;
+    font-family: 'montserrat';
+    padding: 1rem;
+    text-align: center;
+}
+
+.card,
+.form-control {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.bg-dark #chat_body p {
+    background-color: rgba(255, 255, 255, 0.1);
+/*    border-color: rgba(255, 255, 255, 0.2);*/
+}
+
+body.bg-dark .form-control {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control {
+    background-color: inherit !important;
+}
+
+.lightblue-theme p {
+    background-color: rgba(30, 136, 229, 0.3) !important;
+}
+
+.darkblue-theme p {
+    background-color: rgba(0, 102, 153, 0.3) !important;
+}
+
+.teal-theme p {
+    background-color: rgba(0, 128, 128, 0.3) !important;
+}
+
+.purple-theme p {
+    background-color: rgba(111, 84, 153, 0.3) !important;
+}
+
+.lavender-theme p {
+    background-color: rgba(179, 120, 211, 0.3) !important;
+}
+
+.lightgreen-theme p {
+    background-color: rgba(76, 175, 64, 0.3) !important;
+}
+
+.orange-theme p {
+    background-color: rgba(237, 114, 20, 0.3) !important;
+}
+
+.yellow-theme p {
+    background-color: rgba(255, 193, 7, 0.3) !important;
+}
+
+.red-theme p {
+    background-color: rgba(217, 83, 79, 0.3) !important;
+}
+
+body.bg-dark .close {
+    color: #fff;
+}
+
+@media only screen and (max-width: 550px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    #chat_body p, #theme_viewer p {
+        width: 90% !important;
+    }
+}
