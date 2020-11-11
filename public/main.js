@@ -2,7 +2,7 @@ const authRoot = firebase.auth();
 const dbRoot = firebase.database();
 authRoot.onAuthStateChanged(function (user) {
     if (user) {
-        $('body').prepend('<main></main>');
+        $('body .container').prepend('<main></main>');
         initializeChat();
         var userId = user.uid;
         var username = user.displayName;
@@ -51,23 +51,42 @@ authRoot.onAuthStateChanged(function (user) {
             if(data.child('from').val() == username){
                 $('#chat_body').append('<p class="float-right" id="' + data.key + '">' + data.child('msg').val() + '<br><br><span class="text-muted"> You (' + userTimeStamp(data.key) + ')</span></p>');
             } else {
-                $('#chat_body').append('<p class="float-left">' + data.child('msg').val() + '<br><br><span class="text-muted">' + data.child('from').val() + ' (' + userTimeStamp(data.key) + ')</span></p>');
+                $('#chat_body').append('<p class="float-left" id="' + data.key + '">' + data.child('msg').val() + '<br><br><span class="text-muted">' + data.child('from').val() + ' (' + userTimeStamp(data.key) + ')</span></p>');
             }
-            $('#chat_body p#' + data.key).dblclick(function () {
-                $('#message_setting').modal('show');
-                $('#message_setting .btn-outline-danger').attr('id', 'delete_' + data.key);
-                $('#delete_' + data.key).on('click', function () {
-                    messageRef.child(data.key).remove();
-                    $('p#' + data.key).remove()
-                })
-            })
+            var touchtime = 0;
+            $('#chat_body p.float-right#' + data.key).on("click", function () {
+                if (touchtime == 0) {
+                    touchtime = new Date().getTime();
+                } else {
+                    if (((new Date().getTime()) - touchtime) < 800) {
+                        $('#message_setting').modal('show');
+                        $('#message_setting .btn-outline-danger').attr('id', 'delete_' + data.key);
+                        $('#delete_' + data.key).on('click', function () {
+                            messageRef.child(data.key).remove();
+                            $('#message_setting').modal('hide');
+                        });
+                        touchtime = 0;
+                    } else {
+                        touchtime = new Date().getTime();
+                    }
+                }
+            });
+            scrollToLatest(data.key)
         }
+        var removeMsg = function(data){
+            $('#chat_body p#' + data.key).remove();
+        }
+//        messageRef.once('child_added', function(snap){
+//            
+//        })
         messageRef.on('child_added', function(snap){
             publishMsg(snap);
         });
+        dbRoot.ref('/messages/').on('child_removed', function(snap){
+            removeMsg(snap)
+        });
         $('#clear_chat').on('click', function(){
             messageRef.remove();
-            $('#chat_body p').remove()
         });
         $('#logout').on('click', function(){
             authRoot.signOut().then(function(){

@@ -131,8 +131,12 @@ body.bg-dark .close {
     legend {
         font-size: 1rem;
     }
-
-    #chat_body p, #theme_viewer p {
-        width: 90% !important;
+    body, .modal {
+        max-width: 100vw
+    }
+    body .container {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
     }
 }

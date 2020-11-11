@@ -13,6 +13,11 @@ function userTimeStamp(x) {
     var publishedOn = hour + ":" + minute + ":" + second;
     return publishedOn;
 }
+function scrollToLatest(data){
+    $('#chat_body').animate({
+        scrollTop: $("#" + data).offset().top
+    }, 100);
+}
 var fontCheck = function () {
     var fontClasses = ['open-sans', 'montserrat', 'roboto', 'quicksand'];
     fontClasses.forEach(function(name){
@@ -125,8 +130,13 @@ var chatThemeCheck = function(inputVal) {
     }
 }
 var authenticate = function(){
-    $('body').prepend('<div class="row" id="login_main"><div class="col-md-4"></div><div class="col-md-4 center-pad" style="animation: .5s fadein ease-in;-webkit-animation: .5s fadein ease-in;"><div class="form-group"><input class="form-control" type="text" placeholder="Username" id="login_username"></div><div class="form-group"><input class="form-control" type="password" placeholder="Password" id="login_password"></div><button class="btn btn-outline-primary btn-block" type="button" id="login_submit">Login</button></div></div>');
+    $('body .container').prepend('<div class="row" id="login_main"><div class="col-md-4"></div><div class="col-md-4 center-pad" style="animation: .5s fadein ease-in;-webkit-animation: .5s fadein ease-in;"><div class="form-group"><input class="form-control" type="text" placeholder="Username" id="login_username"></div><div class="form-group"><div class="d-flex"><input class="form-control" type="password" placeholder="Password" id="login_password"><span class="btn btn-outline-info" id="passtoggle" style="cursor: pointer"><i class="fa fa-eye"></i></span></div></div><button class="btn btn-outline-primary btn-block" type="button" id="login_submit">Login</button></div></div>');
     $('.center-pad').css('padding-top', $(window).height()/2.5);
+    $('#passtoggle').on('click', function () {
+        $('#login_password').attr('type') ?
+            $('#login_password').removeAttr('type') : $('#login_password').attr('type', 'password');
+        $(this).children('i').toggleClass('fa-eye-slash');
+    });
     $('#login_submit').on('click', function () {
         $(this).prepend('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> ').prop('disabled', true);
         authRoot.signInWithEmailAndPassword($('#login_username').val(), $('#login_password').val()).then(function () {
